@@ -77,7 +77,7 @@ Como forma de demonstração deste  tipo de ataque, fiz um conjunto de scripts e
 
 3.Executar a _script_ EFAIL.py
 
-4.Nesse programa, inserir o endereço para o qual as mensagens vão ser redirecionadas(No meu exemplo eu escolhi efail.pt)
+4.Nesse programa, inserir o endereço para o qual as mensagens vão ser redirecionadas (No meu exemplo eu escolhi efail.pt)
 
 (Verificar que o site digitado é adicionado ao lista.txt)
 
@@ -85,4 +85,4 @@ Como forma de demonstração deste  tipo de ataque, fiz um conjunto de scripts e
 
 6.Verificar que o Bob recebeu a mensagem da Alice 
 
-7.Abrir o ficheiro criado para o endereço digitado no passo 4, e verificar que sao mostradas as mensagens(url+mensagem)
+7.Abrir o ficheiro criado para o endereço digitado no passo 4, e verificar que sao mostradas as mensagens (url+mensagem)
