@@ -57,8 +57,6 @@ pelo facto de disponibilizar _Modification Detection Code (MDC)_, o que mesmo qu
 
 David Ressurreição Alves
 
-Guimarães, Janeiro de 2019.
-
 ---
 Fontes:
 
