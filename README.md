@@ -55,6 +55,9 @@ alguns investigadores, sobretudo porque aquilo que se provou foi que o problema 
 clientes de  _e-mail_. Eu, se tivesse que escolher entre _OpenPGP_ ou _S/MIME_, escolhia _OpenPGP_ para as minhas comunicações sobretudo 
 pelo facto de disponibilizar _Modification Detection Code (MDC)_, o que mesmo que em alguns clientes de _e-mail_ apenas seja mostrado um aviso, já é um ganho significativo em relação ao _S/MIME_. No entanto também acho que os mecanismos do _OpenPGP_ e do _S/MIME_(sendo que na minha opinião o _S/MIME_ cairá em desuso) deviam ser atualizados, para dificultar estes ataques _EFAIL_.
 
+David Ressurreição Alves
+Guimarães, Janeiro de 2019.
+
 ---
 Fontes:
 
