@@ -12,9 +12,9 @@ usou OpenPGP.
 
 
 Em 2018, 8 investigadores, que cujo nome deve ser referido, Damian Poddebniak, Christian Dresen, Jens Müller, Fabian Ising, Sebastian 
-Schinzel, Simon Friedberger, Juraj Somorovsky e Jörg Schwenk, como parte da sua participação na _USENIX_, descobriram vulnerabilidades 
-nos protocolos _OpenPGP_ e _S/MIME_ em comunicações de _e-mail_, o que criou uma grande surpresa na comunidade criptográfica e dividiu 
-muitas opiniões, havendo desde aqueles que diziam que  o _OpenPGP_ estava “morto” e não devia ser usado, e aqueles que diziam que o 
+Schinzel, Simon Friedberger, Juraj Somorovsky e Jörg Schwenk, como parte da sua participação na USENIX, descobriram vulnerabilidades 
+nos protocolos OpenPGP e S/MIME em comunicações de _e-mail_, o que criou uma grande surpresa na comunidade criptográfica e dividiu 
+muitas opiniões, havendo desde aqueles que diziam que  o OpenPGP estava “morto” e não devia ser usado, e aqueles que diziam que o 
 problema não estava no _OpenPGP_, mas sim em alguns clientes de _e-mail_ que usam o protocolo. A esta falha foi-lhe atribuído o nome de _EFAIL_, e basicamente retrata o seguinte ataque: numa primeira fase o atacante tem que ter acesso aos _e-mails_ encriptados, (isto pode ser feito através de captura de trafego de uma rede ou atacando contas de _e-mail_, servidores ou computadores, entre outros). O atacante altera o _e-mail_ encriptado, adicionando, (usando _HTML_), conteúdo externo, como por exemplo, imagens colocadas num servidor com um determinado _URL_, e envia-o para a vítima. O cliente de _e-mail_ da vítima desencripta o _e-mail_ e lê o conteúdo externo de um dado _URL_, isto vai fazer com que em alguns clientes de _e-mail_, o texto limpo seja possível de obter pelo atacante. 
 
 
