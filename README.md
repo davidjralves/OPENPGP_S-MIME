@@ -18,7 +18,7 @@ muitas opiniões, havendo desde aqueles que diziam que  o OpenPGP estava “mort
 problema não estava no OpenPGP, mas sim em alguns clientes de _e-mail_ que usam o protocolo. A esta falha foi-lhe atribuído o nome de EFAIL, e basicamente retrata o seguinte ataque: numa primeira fase o atacante tem que ter acesso aos _e-mails_ encriptados, (isto pode ser feito através de captura de trafego de uma rede ou atacando contas de _e-mail_, servidores ou computadores, entre outros). O atacante altera o _e-mail_ encriptado, adicionando, (usando HTML), conteúdo externo, como por exemplo, imagens colocadas num servidor com um determinado URL, e envia-o para a vítima. O cliente de _e-mail_ da vítima desencripta o _e-mail_ e lê o conteúdo externo de um dado URL, isto vai fazer com que em alguns clientes de _e-mail_, o texto limpo seja possível de obter pelo atacante. 
 
 
-Existem dois tipos de ataques _EFAIL_: _direct exfiltration_ e _CBC/CFB Gadget Attack_.
+Existem dois tipos de ataques EFAIL: _direct exfiltration_ e _CBC/CFB Gadget Attack_.
 
 O _direct exfiltration_ funciona da seguinte forma: O atacante cria um novo código HTML, constituído por três partes, a primeira 
 contém o URL de uma imagem, por exemplo, deixando aberto o atributo _src_ o que faz com que se possa adicionar mais dados a esse 
@@ -32,27 +32,27 @@ isso poderá ver facilmente quais foram os pedidos feitos ao seu servidor do _we
 
 
 O _CBC/CFB Gadget Attack_ é um método, na minha opinião mais lento e complicado, no entanto também pode ser eficaz e deve-se ao facto de 
-a cifra utilizada no protocolo _S/MIME_ ser _CBC_, no qual, um atacante pode alterar os blocos de texto limpo, se souber qual o 
-texto limpo, o que torna o _S/MIME_ ainda mais vulnerável, uma vez que os _e-mails_ encriptados usando _S/MIME_ geralmente começam 
+a cifra utilizada no protocolo S/MIME ser CBC, no qual, um atacante pode alterar os blocos de texto limpo, se souber qual o 
+texto limpo, o que torna o S/MIME ainda mais vulnerável, uma vez que os _e-mails_ encriptados usando S/MIME geralmente começam 
 por “_Content-type: multipart/signed_". Sabendo isto poderá assim tentar-se combinar vários blocos de texto limpo que já conhecemos o 
 seu conteúdo, juntamente com blocos de texto cifrado que não sabemos o conteúdo e de seguida desencriptar, como consequência disto, o 
 texto limpo fica ilegível, o atacante poderá corrigir isto com a adição de gadgets, (técnicas de alterar a saída de determinadas 
-funções), sendo que assim o atacante poderá inserir no meio dos blocos de texto limpo que não conhece, as tags de _HTML_ que inserem a 
-leitura de conteúdos externos ao _e-mail_. Este método funciona também no _OpenPGP_, que usa a cifra _CFB_. No entanto ao contrário do 
-_S/MIME_, o _OpenPGP_ disponibiliza _Modification Detection Code (MDC)_ que consegue detetar texto limpo modificado, no entanto  estes 
-investigadores do _EFAIL_ descobriram que alguns clientes de _e-mail_ simplesmente mostram um aviso quando existe um texto limpo 
+funções), sendo que assim o atacante poderá inserir no meio dos blocos de texto limpo que não conhece, as tags de HTML que inserem a 
+leitura de conteúdos externos ao _e-mail_. Este método funciona também no OpenPGP, que usa a cifra CFB. No entanto ao contrário do 
+S/MIME, o OpenPGP disponibiliza _Modification Detection Code (MDC)_ que consegue detetar texto limpo modificado, no entanto  estes 
+investigadores do EFAIL descobriram que alguns clientes de _e-mail_ simplesmente mostram um aviso quando existe um texto limpo 
 modificado e continuam a mostrar o seu conteúdo.
 
 
-Estes investigadores deixaram algumas recomendações aos fornecedores de clientes de _e-mail_ para evitar estes ataques, algumas delas são: Remover a desencriptação no cliente de _e-mail_, sendo que para isso as chaves privadas de remetente e do destinatário não poderiam estar armazenadas no cliente de _e-mail_, e sendo assim  o cliente de _e-mail_ apenas serveria para enviar e receber mensagens encriptadas, e depois essas mensagens encriptadas seriam desencriptadas numa aplicação à parte, desta forma o atacante não poderia inserir a abertura de conteúdo externo; Desativar o conteúdo ativo presente em _HTML_ ou _JavaScript_, tais como a apresentação de imagens, entre outros;Atualizar os standards do _S/MIME_ e do _OpenPGP_.
+Estes investigadores deixaram algumas recomendações aos fornecedores de clientes de _e-mail_ para evitar estes ataques, algumas delas são: Remover a desencriptação no cliente de _e-mail_, sendo que para isso as chaves privadas de remetente e do destinatário não poderiam estar armazenadas no cliente de _e-mail_, e sendo assim  o cliente de _e-mail_ apenas serveria para enviar e receber mensagens encriptadas, e depois essas mensagens encriptadas seriam desencriptadas numa aplicação à parte, desta forma o atacante não poderia inserir a abertura de conteúdo externo; Desativar o conteúdo ativo presente em HTML ou JavaScript, tais como a apresentação de imagens, entre outros;Atualizar os standards do S/MIME e do OpenPGP.
 
 
-O facto do _EFAIL_ ter gerado polémica deve-se também por ter mostrado estas falhas em clientes de _e-mail_ usados por um grande 
-número de pessoas. Alguns do clientes de _e-mail_ nos quais se verificaram os ataques _EFAIL_ foram: _Thunderbird_, _Apple Mail_, _iOS Mail_, _GMail_, _Outlook 2016_, _Windows 10 Mail_, entre outros. De todos, aqueles dos quais não se conseguiu obter com sucesso os ataques _EFAIL_ tanto em _S/MIME_ como em _OpenPGP_, são o _Claws_ e o _Mutt_ (curiosamente, não tão populares como aqueles nos quais se conseguiu atacar).
+O facto do EFAIL ter gerado polémica deve-se também por ter mostrado estas falhas em clientes de _e-mail_ usados por um grande 
+número de pessoas. Alguns do clientes de _e-mail_ nos quais se verificaram os ataques EFAIL foram: Thunderbird, Apple Mail, iOS Mail, GMail, Outlook 2016, Windows 10 Mail, entre outros. De todos, aqueles dos quais não se conseguiu obter com sucesso os ataques EFAIL tanto em S/MIME como em OpenPGP, são o Claws e o Mutt (curiosamente, não tão populares como aqueles nos quais se conseguiu atacar).
 
-Por tudo isto, e analisados todos os aspetos, na minha opinião, não creio que o _OpenPGP_ ou _S/MIME_ estejam “mortos“, como dizem 
+Por tudo isto, e analisados todos os aspetos, na minha opinião, não creio que o OpenPGP ou S/MIME estejam “mortos“, como dizem 
 alguns investigadores, sobretudo porque aquilo que se provou foi que o problema não está no _OpenPGP_ ou no _S/MIME_ mas sim nos 
-clientes de  _e-mail_. Eu, se tivesse que escolher entre _OpenPGP_ ou _S/MIME_, escolhia _OpenPGP_ para as minhas comunicações sobretudo 
+clientes de  _e-mail_. Eu, se tivesse que escolher entre OpenPGP ou S/MIME, escolhia _OpenPGP_ para as minhas comunicações sobretudo 
 pelo facto de disponibilizar _Modification Detection Code (MDC)_, o que mesmo que em alguns clientes de _e-mail_ apenas seja mostrado um aviso, já é um ganho significativo em relação ao _S/MIME_. No entanto também acho que os mecanismos do _OpenPGP_ e do _S/MIME_(sendo que na minha opinião o _S/MIME_ cairá em desuso) deviam ser atualizados, para dificultar estes ataques _EFAIL_.
 
 David Ressurreição Alves
