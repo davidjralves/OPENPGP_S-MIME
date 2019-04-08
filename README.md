@@ -23,10 +23,10 @@ Existem dois tipos de ataques _EFAIL_: _direct exfiltration_ e _CBC/CFB Gadget A
 O _direct exfiltration_ funciona da seguinte forma: O atacante cria um novo código HTML, constituído por três partes, a primeira 
 contém o URL de uma imagem, por exemplo, deixando aberto o atributo _src_ o que faz com que se possa adicionar mais dados a esse 
 atributo, e é isso que é feito na segunda parte, esta contém o _e-mail_ encriptado que é assim adicionado ao atribuito _src_ que já 
-continha uma imagem, a terceira parte serve apenas para fechar o conteúdo do atributo _src_. De seguida, o atacante envia este _e-mail_ 
-para a vítima. O cliente de _e-mail_ da vítima desencripta a segunda parte do _HTML_ enviado e coloca o conteúdo desencriptado das três 
-partes num único _HTML_. De seguida o cliente de _e-mail_, vai fazer um pedido ao _URL_ presente na primeira parte do _HTML_ 
-desencriptado, codificando todos os  caracteres não imprimíveis, (por exemplo %20 para espaços entre palavras), adiciona ao _URL_ o 
+continha uma imagem, a terceira parte serve apenas para fechar o conteúdo do atributo src. De seguida, o atacante envia este _e-mail_ 
+para a vítima. O cliente de _e-mail_ da vítima desencripta a segunda parte do HTML enviado e coloca o conteúdo desencriptado das três 
+partes num único HTML. De seguida o cliente de _e-mail_, vai fazer um pedido ao URL presente na primeira parte do HTML 
+desencriptado, codificando todos os  caracteres não imprimíveis, (por exemplo %20 para espaços entre palavras), adiciona ao URL o 
 conteúdo da mensagem  desencriptada. Como é óbvio, uma vez que o atacante é administrador do website onde se encontra a imagem e por 
 isso poderá ver facilmente quais foram os pedidos feitos ao seu servidor do _website_, podendo assim obter o texto limpo.
 
