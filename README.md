@@ -4,11 +4,11 @@ para uma comunicação e são baseadas num segredo partilhado que é negociado n
 TLS na comunicação  de _e-mail standard_. Contudo  por vezes existem  situações em que as  comunicações necessitam de ser altamente 
 confidenciais e o protocolo TLS pode não ser suficiente, (até porque o protocolo TLS  deriva do SSL, um protocolo que acabou por 
 ser  proibído  devido  a  várias  vulnerabilidades  de  segurança,  sobretudo  a  ataques _man-in-the-middle_). Para responder a estas
-necessidades e vulnerabilidades do _TLS_, implementaram-se  protocolos  como  o _OpenPGP_ e _S/MIME_ que têm uma encriptação 
+necessidades e vulnerabilidades do TLS, implementaram-se  protocolos  como  o OpenPGP e S/MIME que têm uma encriptação 
 _end-to-end_, (sistema de comunicações no  qual  apenas  os  intervenientes  da comunicação podem ter acesso às mensagens, 
-não permitindo sequer o _ISP_(fornecedor  de  _internet_)  ter  acesso  às  mesmas). Como nota histórica, Edward Snowden, 
+não permitindo sequer o ISP(fornecedor  de  _internet_)  ter  acesso  às  mesmas). Como nota histórica, Edward Snowden, 
 quando contactou a jornalista Laura Poitras sobre  aquilo  que  viria  a  ser  o  grande escândalo da falta de privacidade na internet,
-usou _OpenPGP_.
+usou OpenPGP.
 
 
 Em 2018, 8 investigadores, que cujo nome deve ser referido, Damian Poddebniak, Christian Dresen, Jens Müller, Fabian Ising, Sebastian 
