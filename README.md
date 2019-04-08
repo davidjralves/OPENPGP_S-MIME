@@ -15,13 +15,13 @@ Em 2018, 8 investigadores, que cujo nome deve ser referido, Damian Poddebniak, C
 Schinzel, Simon Friedberger, Juraj Somorovsky e Jörg Schwenk, como parte da sua participação na USENIX, descobriram vulnerabilidades 
 nos protocolos OpenPGP e S/MIME em comunicações de _e-mail_, o que criou uma grande surpresa na comunidade criptográfica e dividiu 
 muitas opiniões, havendo desde aqueles que diziam que  o OpenPGP estava “morto” e não devia ser usado, e aqueles que diziam que o 
-problema não estava no _OpenPGP_, mas sim em alguns clientes de _e-mail_ que usam o protocolo. A esta falha foi-lhe atribuído o nome de EFAIL, e basicamente retrata o seguinte ataque: numa primeira fase o atacante tem que ter acesso aos _e-mails_ encriptados, (isto pode ser feito através de captura de trafego de uma rede ou atacando contas de _e-mail_, servidores ou computadores, entre outros). O atacante altera o _e-mail_ encriptado, adicionando, (usando HTML), conteúdo externo, como por exemplo, imagens colocadas num servidor com um determinado _URL_, e envia-o para a vítima. O cliente de _e-mail_ da vítima desencripta o _e-mail_ e lê o conteúdo externo de um dado _URL_, isto vai fazer com que em alguns clientes de _e-mail_, o texto limpo seja possível de obter pelo atacante. 
+problema não estava no OpenPGP, mas sim em alguns clientes de _e-mail_ que usam o protocolo. A esta falha foi-lhe atribuído o nome de EFAIL, e basicamente retrata o seguinte ataque: numa primeira fase o atacante tem que ter acesso aos _e-mails_ encriptados, (isto pode ser feito através de captura de trafego de uma rede ou atacando contas de _e-mail_, servidores ou computadores, entre outros). O atacante altera o _e-mail_ encriptado, adicionando, (usando HTML), conteúdo externo, como por exemplo, imagens colocadas num servidor com um determinado URL, e envia-o para a vítima. O cliente de _e-mail_ da vítima desencripta o _e-mail_ e lê o conteúdo externo de um dado URL, isto vai fazer com que em alguns clientes de _e-mail_, o texto limpo seja possível de obter pelo atacante. 
 
 
 Existem dois tipos de ataques _EFAIL_: _direct exfiltration_ e _CBC/CFB Gadget Attack_.
 
-O _direct exfiltration_ funciona da seguinte forma: O atacante cria um novo código _HTML_, constituído por três partes, a primeira 
-contém o _URL_ de uma imagem, por exemplo, deixando aberto o atributo _src_ o que faz com que se possa adicionar mais dados a esse 
+O _direct exfiltration_ funciona da seguinte forma: O atacante cria um novo código HTML, constituído por três partes, a primeira 
+contém o URL de uma imagem, por exemplo, deixando aberto o atributo _src_ o que faz com que se possa adicionar mais dados a esse 
 atributo, e é isso que é feito na segunda parte, esta contém o _e-mail_ encriptado que é assim adicionado ao atribuito _src_ que já 
 continha uma imagem, a terceira parte serve apenas para fechar o conteúdo do atributo _src_. De seguida, o atacante envia este _e-mail_ 
 para a vítima. O cliente de _e-mail_ da vítima desencripta a segunda parte do _HTML_ enviado e coloca o conteúdo desencriptado das três 
