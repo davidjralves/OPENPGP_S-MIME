@@ -1,4 +1,4 @@
-# _EFAIL_-A falha de segurança no _OpenPGP_ e _S/MIME_
+# EFAIL-A falha de segurança no OpenPGP e S/MIME
  Actualmente nas comunicações de _e-mail_, as mensagens são encriptadas usando criptografia simétrica, sendo as chaves geradas apenas 
 para uma comunicação e são baseadas num segredo partilhado que é negociado no início de cada  comunicação, e por isso usa-se o protocolo
 _TLS_ na comunicação  de _e-mail standard_. Contudo  por vezes existem  situações em que as  comunicações necessitam de ser altamente 
