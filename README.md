@@ -53,7 +53,7 @@ número de pessoas. Alguns do clientes de _e-mail_ nos quais se verificaram os a
 Por tudo isto, e analisados todos os aspetos, na minha opinião, não creio que o OpenPGP ou S/MIME estejam “mortos“, como dizem 
 alguns investigadores, sobretudo porque aquilo que se provou foi que o problema não está no OpenPGP ou no S/MIME mas sim nos 
 clientes de  _e-mail_. Eu, se tivesse que escolher entre OpenPGP ou S/MIME, escolhia OpenPGP para as minhas comunicações sobretudo 
-pelo facto de disponibilizar _Modification Detection Code (MDC)_, o que mesmo que em alguns clientes de _e-mail_ apenas seja mostrado um aviso, já é um ganho significativo em relação ao S/MIME. No entanto também acho que os mecanismos do _OpenPGP_ e do S/MIME(sendo que na minha opinião o S/MIME cairá em desuso) deviam ser atualizados, para dificultar estes ataques EFAIL.
+pelo facto de disponibilizar _Modification Detection Code (MDC)_, o que mesmo que em alguns clientes de _e-mail_ apenas seja mostrado um aviso, já é um ganho significativo em relação ao S/MIME. No entanto também acho que os mecanismos do OpenPGP e do S/MIME(sendo que na minha opinião o S/MIME cairá em desuso) deviam ser atualizados, para dificultar estes ataques EFAIL.
 
 David Ressurreição Alves
 
