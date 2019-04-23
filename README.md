@@ -71,7 +71,7 @@ https://en.wikipedia.org/wiki/End-to-end_encryption
 https://en.wikipedia.org/wiki/S/MIME
 
 ---
-Como forma de demonstração deste  tipo de ataque, fiz um conjunto de scripts em _python_, e para se poder observarem devem-se seguir os seguintes passos:
+Como forma de demonstração deste  tipo de ataque, fiz um conjunto de scripts em python, e para se poder observarem devem-se seguir os seguintes passos:
 
 1.Executar _script_ Alice.py
 
